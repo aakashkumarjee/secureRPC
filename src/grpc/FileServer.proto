@@ -1,0 +1,27 @@
+// Author <<=== aakashkumarjee@gmail.com ===>>
+
+syntax = "proto3";
+
+package FSPackage;
+
+service FS {
+    rpc command(cmd) returns (out);
+    rpc connect(Client) returns (ConnectStatus);
+}
+
+message noParams{
+}
+message Client {
+    string key = 1;
+    string message = 2;
+}
+message cmd{
+    string  command = 1;
+}
+message out {
+    string output = 1;
+}
+message ConnectStatus {
+    string status = 1;
+}
+// Author <<=== aakashkumarjee@gmail.com ===>>

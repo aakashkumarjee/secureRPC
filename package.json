@@ -1,0 +1,25 @@
+{
+  "name": "secureRPC",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "aakashkumarjee@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.5",
+    "asyncawait": "^3.0.0",
+    "crypto": "^1.0.1",
+    "cryptr": "^6.0.2",
+    "grpc": "^1.24.4",
+    "inquirer": "^7.3.3",
+    "node-powershell": "^4.0.0",
+    "powershell": "^2.3.2",
+    "prompt-sync": "^4.2.0",
+    "random-name": "^0.1.2",
+    "uid-generator": "^2.0.0"
+  }
+}
