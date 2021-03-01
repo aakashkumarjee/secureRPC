@@ -29,6 +29,14 @@ In distributed computing, a remote procedure call (RPC) is when a computer progr
 5.	The server stub unpacks the parameters from the message. Unpacking the parameters is called unmarshalling.
 6.	Finally, the server stub calls the server procedure. The reply traces the same steps in the reverse direction.
 
+# Dependencies
+
+-Built using NodeJS
+-Used CryptrJS Module for encrypting decrypting data
+-GRPC as rpc module
+-InquirerJS for terminal I/O
+
 
 # Why GRPC
 In gRPC, a client application can directly call a method on a server application on a different machine as if it were a local object, making it easier for you to create distributed applications and services. As in many RPC systems, gRPC is based around the idea of defining a service, specifying the methods that can be called remotely with their parameters and return types. On the server side, the server implements this interface and runs a gRPC server to handle client calls. On the client side, the client has a stub (referred to as just a client in some languages) that provides the same methods as the server.
+
